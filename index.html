@@ -6,10 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <h1>Hello world</h1>
+<body id="main">
+    <!-- Begin Head Section-->
+    <header id="navHead">
+
+        <div>
+            <img id="headShot"
+                src="https://res.cloudinary.com/nss-student/image/upload/v1621437907/GradImage_ftecfo.jpg"
+                alt="Jereamiah Schugt">
+        </div>
+        <h1 id="profileName">Jeremiah Schugt</h1>
+        <form id="contactInfo">
+            <h2>Contact info</h2>
+            <div>
+                Email:
+                <a href="mailto: jeremiah.r.schugt@gmail.com">
+                    jeremiah.r.schugt@gmail.com
+                </a>
+            </div>
+            <div>
+                Github:
+                <a href="https://github.com/JSchugt">
+                    JSchugt
+                </a>
+            </div>
+        </form>
+    </header> <!-- End Head Section-->
+    <nav class="side-nav" id="side-nav">
+        <ul class="side-nav" id="side-nav">
+            <li id="home" class="li-nav is-active"><span>Home</span></li>
+            <li id="works" class="li-nav"><span>Works</span></li>
+            <li id="about" class="li-nav"><span>About</span></li>
+            <li id="contact" class="li-nav"><span>Contact</span></li>
+        </ul>
+    </nav>
+    <ul class="l-main-content main-content">
+        <li class="l-section section section--is-active">
+            <div class="intro">
+                <div class="intro--banner">
+                    <h2>Technical Experience</h2>
+                    <div id="tech-experience"></div>
+
+                </div>
+                <div class="intro--options">
+                </div>
+            </div>
+        </li>
+    </ul>
+    <script src="./index.js"></script>
 </body>
 
 </html>
