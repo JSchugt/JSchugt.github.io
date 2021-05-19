@@ -1,0 +1,171 @@
+/* body {
+    background-color: #A2E2E8;
+} */
+
+#headShot {
+    border-radius: 50%;
+    width: 200px;
+}
+
+#navHead {
+    background-color: #191970;
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    justify-content: space-around;
+    color: #A2E2E8;
+    margin: -10px;
+}
+
+#navHead a {
+    color: #A2E2E8;
+    font-size: 1em;
+}
+
+#profileName {
+    font-size: 4em;
+    color: #A2E2E8;
+}
+
+/* Side nav bar */
+
+.side-nav {
+    position: relative;
+    display: flex;
+    width: 100px;
+    height: 70%;
+    max-height: 750px;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+    z-index: 10;
+}
+
+.side-nav li {
+    position: relative;
+    list-style-type: none;
+    top: -5px;
+    color: blue;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.side-nav span {
+    position: relative;
+    top: 3px;
+    left: 10px;
+    color: purple;
+    font-size: 1em;
+    font-weight: 300;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.side-nav::before {
+    position: absolute;
+    top: 3px;
+    left: 10px;
+    color: #555;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.side-nav li:nth-child(1)::before {
+    margin-left: 1em;
+    content: "01";
+}
+
+.side-nav li:nth-child(2)::before {
+    margin-left: 1em;
+    content: "02";
+}
+
+.side-nav li:nth-child(3)::before {
+    margin-left: 1em;
+    content: "03";
+}
+
+.side-nav li:nth-child(4)::before {
+    margin-left: 1em;
+    content: "04";
+}
+
+.side-nav li:nth-child(5)::before {
+    margin-left: 1em;
+    content: "05";
+}
+
+.side-nav li.is-active {
+    color: yellow;
+    transition: color 0.4s ease-in-out;
+}
+
+.side-nav li.is-active span {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.side-nav li.is-active::before {
+    left: -33px;
+    color: green;
+}
+
+/* .is-active {
+    background-color: pink;
+} */
+
+#main {
+    background-color: black;
+}
+
+.side-nav {
+    position: absolute;
+    left: 0;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.side-nav::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 3em;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 70%;
+    max-height: 750px;
+    background-color: #555;
+    opacity: 1;
+    z-index: 10;
+}
+
+/* .side-nav @media {
+    display: none
+} */
+
+span {
+    z-index: -1;
+    width: fit-content;
+}
+
+.l-main-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: 15%;
+}
+
+.intro--banner {
+    color: white;
+}
+
+#tech-experience {
+    font-size: 1.5em;
+}
