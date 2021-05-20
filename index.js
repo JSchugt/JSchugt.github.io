@@ -1,6 +1,6 @@
 import { getCurrent, navEnumMinus, navEnumAdd, setCurrent } from "./src/navEnum.js"
-import { getTechExperience } from "./src/workExperience.js"
-
+// import { getTechExperience } from "./src/workExperience.js"
+import { getHomeDisplay } from "./src/homeDisplay.js"
 const bodyListener = document.getElementById("main")
 const l_nav_listener = document.getElementById("l-side-nav")
 
@@ -36,7 +36,7 @@ window.addEventListener("wheel", event => {
 
 
 const main = () => {
-    getTechExperience()
+    getHomeDisplay()
 
 }
 
