@@ -1,44 +1,44 @@
-let currentLi = "home"
-
+import { getCurrent, navEnumMinus, navEnumAdd, setCurrent } from "./src/navEnum.js"
+import { getTechExperience } from "./src/workExperience.js"
 
 const bodyListener = document.getElementById("main")
+const l_nav_listener = document.getElementById("l-side-nav")
 
 const liClick = (liId) => {
-    console.log(document.getElementById(currentLi).classList !== null)
-    if (liId !== currentLi && liId !== "side-nav" && document.getElementById(currentLi).classList !== null) {
-        document.getElementById(currentLi).classList.remove("is-active")
-        currentLi = liId
+    console.log(document.getElementById(getCurrent()).classList !== null)
+    if (liId !== getCurrent() && liId !== "side-nav" && !(document.getElementById(getCurrent()).classList === null)) {
+        document.getElementById(getCurrent()).classList.remove("is-active")
+        setCurrent(liId)
         document.getElementById(liId).classList.add("is-active")
     }
 }
-bodyListener.addEventListener("click", event => {
+
+
+l_nav_listener.addEventListener("click", event => {
     console.log(event.target)
     liClick(event.target.id)
 })
 
 
-const techExp = `
-<p>
-<br>System Srvices Enterprises Inc            St. Louis, MO           May 2019 - Dec 2020
-<br>   Boeing P8 VMT Developer
-<br>    -	Worked on the P8 Poseidon program in radar and sensors simulations
-<br>    -	Extensive work in version control and customer specific repos
-<br>
-<br>Austin Peay State University               Clarksville, TN         Sep 2018 - May 2019
-<br>   Student Tutor Level II
-<br>    -	Tutored students in group sessions and one-on-one, training 10 students 
-<br>        per-week, in C++, Java, Security, and Database Management
-<br>
-</p>
-`
+window.addEventListener("wheel", event => {
+    console.log(event, "wheel event")
+    if (event.wheelDeltaY < 0 && !event.ctrlKey) {
+        document.getElementById(getCurrent()).classList.remove("is-active")
+        navEnumAdd()
+        document.getElementById(getCurrent()).classList.add("is-active")
+    }
+    else if (event.wheelDeltaY > 0 && !event.ctrlKey) {
+        document.getElementById(getCurrent()).classList.remove("is-active")
+        navEnumMinus()
+        document.getElementById(getCurrent()).classList.add("is-active")
+    }
+})
 
-const getTechExperience = () => {
-    let text = techExp.replace(/\s/g, '&nbsp;')
-    document.getElementById("tech-experience").innerHTML = text
-}
+
 const main = () => {
     getTechExperience()
 
 }
+
 
 main()
