@@ -76,23 +76,43 @@
 }
 
 .side-nav li:nth-child(1)::before {
-    margin-left: 1em;
-    content: "01";
+    margin-left: 1.5em;
+    content: "1";
+    border: solid 5px;
+    border-radius: 50%;
+    padding: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
 }
 
 .side-nav li:nth-child(2)::before {
-    margin-left: 1em;
-    content: "02";
+    margin-left: 1.5em;
+    content: "2";
+    border: solid 5px;
+    border-radius: 50%;
+    padding: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
 }
 
 .side-nav li:nth-child(3)::before {
-    margin-left: 1em;
-    content: "03";
+    margin-left: 1.5em;
+    content: "3";
+    border: solid 5px;
+    border-radius: 50%;
+    padding: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
 }
 
 .side-nav li:nth-child(4)::before {
-    margin-left: 1em;
-    content: "04";
+    margin-left: 2em;
+    content: "4";
+    border: solid 5px;
+    border-radius: 50%;
+    padding: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
 }
 
 .side-nav li:nth-child(5)::before {
@@ -114,6 +134,7 @@
 .side-nav li.is-active::before {
     left: -33px;
     color: red;
+    background-color: lightblue;
 }
 
 /* .is-active {
@@ -121,7 +142,7 @@
 } */
 
 #main {
-    background-color: lightblue;
+    background-color: cornsilk;
 }
 
 .side-nav {
@@ -131,7 +152,7 @@
     height: 80%;
     align-items: center;
     background-color: orange;
-    width: 12em;
+    width: 16em;
     margin-top: .5em;
 }
 
@@ -139,10 +160,10 @@
     content: "";
     position: absolute;
     top: 50%;
-    left: 3em;
+    left: 9em;
     transform: translateY(-50%);
     width: 2px;
-    height: 55%;
+    height: 80%;
     max-height: 750px;
     background-color: #555;
     opacity: 1;
@@ -171,6 +192,8 @@ span {
 
 .intro--banner {
     color: black;
+    left: 4em;
+    position: relative;
 }
 
 #tech-experience {
@@ -196,8 +219,8 @@ span {
 }
 
 .intro {
-    background-color: salmon;
-    height: 30em;
+    background-color: cornsilk;
+    height: 80%;
     width: 40em;
     padding-left: 5em;
     margin-top: -1.2em;

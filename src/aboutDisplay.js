@@ -30,6 +30,7 @@ export const getAboutDisplay = () => {
     `
 
     document.getElementById("main-display").innerHTML = text
+    document.getElementById("pageTitle").innerHTML = "About"
 
 
 }

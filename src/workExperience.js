@@ -31,6 +31,7 @@ const techExp = `
 
 export const getTechExperience = () => {
     let text = techExp.replace(/\s/g, '&nbsp;')
+    document.getElementById("pageTitle").innerHTML = "Work Experience"
 
     document.getElementById("main-display").innerHTML = text
 }
