@@ -184,3 +184,28 @@ span {
     width: fit-content;
     height: 100%;
 }
+
+#experienceStack {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+#techLIst {
+    margin-right: 4em;
+}
+
+#techListItme {
+    display: flex;
+    flex-direction: row;
+}
+
+h3 {
+    text-underline-position: below;
+}
+
+.techImage {
+    margin-top: 4em;
+    height: 4em;
+    width: auto;
+}
