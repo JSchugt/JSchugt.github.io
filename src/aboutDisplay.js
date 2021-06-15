@@ -4,7 +4,7 @@ export const getAboutDisplay = () => {
     let text = `
     <h2>What I've Been Doing</h2>
     <h3>Austing Peay State University</h3>
-    <p>Starting off at APSU, I rememberd how much fun coding was from middle school
+    <p>Starting off at APSU, I remembered how much fun coding was from middle school
     <br>
     first learning QBasic and basic functionality of program development.
     <br>
