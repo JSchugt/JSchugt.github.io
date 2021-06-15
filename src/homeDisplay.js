@@ -3,6 +3,7 @@
 export const getHomeDisplay = () => {
     let text = `
     <h2>Coding is teaching rocks to think</h2>
+    <p>Focused and quick-learning ASP.net Full stack developer with experience in request. Additional experience with unit testing. Skilled in C#, C++, Agile Methodologies, React, with a working knowledge of Java and Bash. Strong engineering professional with a Bachelor of Science - BS focused in Computer and Information Security Science Austin Peay State Unitversity.</p>
     <div id="experienceStack">
         <div id="techLIst">
             <h3>Languages</h3>
