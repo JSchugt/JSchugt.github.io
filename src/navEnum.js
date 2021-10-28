@@ -1,6 +1,6 @@
 import { getTechExperience } from "./workExperience.js"
 import { getHomeDisplay } from "./homeDisplay.js"
-import { getContactDisplay } from "./contactDisplay.js"
+// import { getContactDisplay } from "./contactDisplay.js"
 import { getAboutDisplay } from "./aboutDisplay.js"
 const navEnum = {
     home: "Home",
@@ -21,8 +21,8 @@ export const setCurrent = (element) => {
             break;
         case "About": getAboutDisplay()
             break;
-        case "Contact": getContactDisplay()
-            break;
+        // case "Contact": getContactDisplay()
+        //     break;
         default:
     }
 }
